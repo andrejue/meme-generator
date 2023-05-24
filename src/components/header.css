@@ -1,0 +1,36 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  padding: 20px 10px;
+  background: linear-gradient(90deg, #672280 1.18%, #b130e0 100%);
+  box-shadow: 0px 3px 5px rgba(32, 32, 32, 0.438);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  font-family: 'Karla';
+  font-style: normal;
+  font-size: 0.7em;
+  letter-spacing: -0.1em;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(40, 40, 40, 0.664);
+}
+
+.header--logo {
+  width: 31px;
+  height: 26px;
+  margin-right: 5px;
+}
+
+.header--sub {
+
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 0.50rem;
+  line-height: 15px;
+  color: #FFFFFF;
+}

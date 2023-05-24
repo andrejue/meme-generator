@@ -1,0 +1,115 @@
+.form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 60px;
+}
+
+.upper-phrase {
+   width: 230px;
+   height: 35px;
+   border: 1px solid rgb(97, 97, 97, 0.575);
+   border-radius: 5px;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.221);
+   margin-right: 19px;
+   text-indent: 8px;
+ }
+
+ .below-phrase {
+   width: 230px;
+   height: 35px;
+   border: 1px solid rgba(97, 97, 97, 0.575);
+   border-radius: 5px;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.221);
+   text-indent: 8px;
+ }
+
+ .btn {
+   margin-top: 20px;
+   width: 477px;
+   height: 40px;
+   border: none;
+   border-radius: 5px;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.221);
+   background: linear-gradient(90deg, #672280 1.18%, #b130e0 100%);
+   font-family: 'Karla';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   text-align: center;
+   letter-spacing: -0.1em;
+   color: #FFFFFF;
+   cursor: pointer;
+ }
+
+.meme-img {
+  max-width: 477px;
+ }
+
+.meme {
+  position: relative;
+  margin-top: 30px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  font-family: impact, sans-serif;
+  font-size: 2.3em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+.download-btn {
+  position: relative;
+  width: 200px;
+  margin-top: 20px;
+  padding: 10px;
+  background-image: linear-gradient(90deg, #672280 1.18%, #b130e0 100%);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.221);
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+.download-btn {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.1em;
+  color: #FFFFFF;
+}
+
+.download-btn:hover {
+  background: linear-gradient(90deg, #b130e0 18%, #672280 100%);
+
+}
