@@ -8,7 +8,7 @@ export default function Meme(props) {
    return (
       <>
          <div className="meme" id="meme" ref={componentRef} >
-            <img src={props.src} alt="It's a meme" className="meme-img"/>
+            <img src={props.src} alt="Click to generate a random meme" className="meme-img"/>
             <h2 className="meme--text top">{props.topText}</h2>
             <h2 className="meme--text bottom">{props.bottomText}</h2>
          </div>
