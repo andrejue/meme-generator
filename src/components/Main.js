@@ -1,32 +1,42 @@
-import React, { useState, createRef } from "react";
-
-import Memes from "./Data.js"
+import React, { useState, useEffect } from "react";
+//import Memes from "./Data.js"
 import Meme from "./Meme.js"
-import downloadjs from 'downloadjs';
-import html2canvas from "html2canvas";
 import './main.css'
 
 export default function Main() {
 
    //const [memeImg, setMemeImg] = useState("https://i.imgflip.com/hlmst.jpg")
-   const [meme, setMeme] = useState({
-      ...Memes,
-      topText: "",
-      bottomText: "",
-      randomImage: ""
-   })
 
-   const [allMemeImages, setAllMemeImages] = useState(Memes)
+   const [allMemeImages, setAllMemeImages] = useState([])
+
+   useEffect(() => {
+      fetch("https://api.imgflip.com/get_memes")
+      .then(res => res.json())
+      .then(data => setAllMemeImages(data.data.memes))
+   }, [])
+
+      // useEffect(() => {
+      //    async function getData() {
+      //       const res = await fetch("https://api.imgflip.com/get_memes")
+      //       const data = await res.json()
+      //       setAllMemeImages(data.data.memes)
+      //    }
+      // }, [])
+
+      const [meme, setMeme] = useState({
+         topText: "",
+         bottomText: "",
+         randomImage: ""
+      })
 
    function getMemeImage() {
-      const memesArray = allMemeImages.data.memes;
-      const randomNumber = Math.floor(Math.random() * memesArray.length);
-      const url = memesArray[randomNumber].url
+      const randomNumber = Math.floor(Math.random() * allMemeImages.length);
+      const url = allMemeImages[randomNumber].url
       setMeme(prevMeme => ({
          ...prevMeme,
          randomImage: url
       }));
-
+      console.log("run")
    }
 
    function handleChange(event) {
