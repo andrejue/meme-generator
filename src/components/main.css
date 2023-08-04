@@ -6,6 +6,10 @@
    margin-top: 60px;
 }
 
+.inputs {
+  display: flex;
+}
+
 .upper-phrase {
    width: 230px;
    height: 35px;
@@ -107,9 +111,50 @@
   text-align: center;
   letter-spacing: -0.1em;
   color: #FFFFFF;
+
+  margin-bottom: 2rem;
 }
 
 .download-btn:hover {
   background: linear-gradient(90deg, #b130e0 18%, #672280 100%);
 
+}
+
+@media (max-width: 500px) {
+
+  .inputs {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .btn {
+    margin-top: 3rem;
+    width: 300px;
+  }
+
+  .meme-img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .meme-img {
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 340px) {
+
+  .inputs {
+    gap: 1rem;
+  }
+
+  .btn {
+    margin-top: 1rem;
+  }
+
+  .meme-img {
+    max-width: 310px;
+  }
 }

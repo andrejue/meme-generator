@@ -34,3 +34,9 @@
   line-height: 15px;
   color: #FFFFFF;
 }
+
+@media (max-width: 400px) {
+  .header--sub {
+    display: none;
+  }
+}

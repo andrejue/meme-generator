@@ -56,7 +56,7 @@ export default function Main() {
                <input className="upper-phrase" type="text" placeholder="Top text" name="topText" onChange={handleChange}/>
                <input className="below-phrase" type="text" placeholder="Bottom text" name="bottomText" onChange={handleChange}/>
             </div>
-            <button className="btn" onClick={getMemeImage} >Get a new meme image  🖼</button>
+            <button className="btn" onClick={getMemeImage} >Get a new meme image 😁</button>
 
             <Meme src={meme.randomImage} topText={meme.topText} bottomText={meme.bottomText} />
 
