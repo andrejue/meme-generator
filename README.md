@@ -7,3 +7,7 @@ There are 100 images of known memes!
 👇
 
 https://memegenerator-andrejue.vercel.app/
+
+<hr>
+
+<img src='./public/images/Responsividade_1.jpg' />
